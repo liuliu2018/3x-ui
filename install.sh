@@ -55,10 +55,10 @@ elif [[ "${release}" == "centos" ]]; then
     if [[ ${os_version} -lt 8 ]]; then
         echo -e "${red} Please use CentOS 8 or higher ${plain}\n" && exit 1
     fi
-# elif [[ "${release}" == "ubuntu" ]]; then
-#     if [[ ${os_version} -lt 20 ]]; then
-#         echo -e "${red} Please use Ubuntu 20 or higher version!${plain}\n" && exit 1
-#     fi
+elif [[ "${release}" == "ubuntu" ]]; then
+    if [[ ${os_version} -lt 20 ]]; then
+        echo -e "${red} Please use Ubuntu 20 or higher version!${plain}\n" && exit 1
+    fi
 elif [[ "${release}" == "fedora" ]]; then
     if [[ ${os_version} -lt 36 ]]; then
         echo -e "${red} Please use Fedora 36 or higher version!${plain}\n" && exit 1
